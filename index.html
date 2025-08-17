@@ -73,6 +73,15 @@
             50% { box-shadow: 0 0 20px #3A86FF, 0 0 30px #3A86FF; }
             100% { box-shadow: 0 0 5px #3A86FF, 0 0 10px #3A86FF; }
         }
+        @keyframes glowing-border {
+    0% { box-shadow: 0 0 10px #3A86FF; }
+    50% { box-shadow: 0 0 20px #3A86FF, 0 0 40px #3A86FF; }
+    100% { box-shadow: 0 0 10px #3A86FF; }
+}
+
+.glow-border {
+    animation: glowing-border 2s ease-in-out infinite;
+}
 
         .glow-on-hover:hover {
             animation: glowing 1.5s infinite;
@@ -190,7 +199,7 @@
         <!-- Header/Hero Section -->
         <header class="text-center mb-16 fade-in-up-section visible">
             <!-- Profile Image with Floating Effect -->
-            <img src="my-profile.png" alt="Profile Picture" class="w-48 h-48 rounded-full mx-auto mb-4 shadow-xl floating-image object-cover">
+            <img src="my-profile.png" alt="Profile Picture" class="w-48 h-48 rounded-full mx-auto mb-4 shadow-xl floating-image object-cover glow-border">
             <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-2">VAIVASVAT MATHUR</h1>
             <p class="text-lg font-medium text-white mt-2">
                 +91-8826443490 | mathurvaivasvat@gmail.com | Noida, Uttar Pradesh, India
@@ -466,6 +475,7 @@
 </body>
 
 </html>
+
 
 
 
